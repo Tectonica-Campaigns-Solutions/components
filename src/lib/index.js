@@ -1,2 +1,3 @@
 import NarrativeBlock from './components/NarrativeBlock';
-export { NarrativeBlock };
+import Logos from './components/Logos';
+export { NarrativeBlock, Logos };
