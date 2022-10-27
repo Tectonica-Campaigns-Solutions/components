@@ -19,7 +19,7 @@ function NarrativeBlock({title=null, content=null, alignment=null, bgColor=null,
         </div>
         <div className={`col-lg-5`}>
             {
-              <Image image={images} />
+              images && <Image image={images} />
             }
         </div>
       </div>

@@ -32,7 +32,7 @@ function NarrativeBlock(_ref) {
     ctas: block.ctas
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-lg-5"
-  }, /*#__PURE__*/_react.default.createElement(Image, {
+  }, images && /*#__PURE__*/_react.default.createElement(Image, {
     image: images
   }))));
 }
