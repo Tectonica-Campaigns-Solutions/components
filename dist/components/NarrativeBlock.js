@@ -23,15 +23,19 @@ function NarrativeBlock(_ref) {
     ctas = null
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
+    className: "container narrative-block"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-lg-5"
-  }, title && /*#__PURE__*/_react.default.createElement("h2", null, title), content && /*#__PURE__*/_react.default.createElement("p", null, content), ctas && ctas.length > 0 && /*#__PURE__*/_react.default.createElement(CtaList, {
+    className: "col-lg-5 col-first"
+  }, title && /*#__PURE__*/_react.default.createElement("h2", null, title), content && /*#__PURE__*/_react.default.createElement("div", {
+    dangerouslySetInnerHTML: {
+      __html: content
+    }
+  }), ctas && ctas.length > 0 && /*#__PURE__*/_react.default.createElement(CtaList, {
     ctas: block.ctas
   })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-lg-5"
+    className: "col-lg-5 col-second"
   }, images && /*#__PURE__*/_react.default.createElement(Image, {
     image: images
   }))));
