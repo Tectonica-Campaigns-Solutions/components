@@ -48,9 +48,7 @@ function Image(_ref3) {
   let {
     image
   } = _ref3;
-
-  /*#__PURE__*/
-  _react.default.createElement(_gatsbyPluginImage.GatsbyImage, {
+  return /*#__PURE__*/_react.default.createElement(_gatsbyPluginImage.GatsbyImage, {
     image: image.gatsbyImageData
   });
 }

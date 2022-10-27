@@ -34,7 +34,9 @@ function CtaList({ctas}){
 }
 
 function Image({image}){
-  <GatsbyImage image={image.gatsbyImageData} />
+  return (
+    <GatsbyImage image={image.gatsbyImageData} />
+  )
 }
 
 
