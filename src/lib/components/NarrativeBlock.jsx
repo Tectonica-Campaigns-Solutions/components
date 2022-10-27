@@ -33,14 +33,6 @@ function CtaList({ctas}){
   )
 }
 
-function WrapperImage ({images}){
-  
-}
-
-function Slider({images}){
-  
-}
-
 function Image({image}){
   <GatsbyImage image={image.gatsbyImageData} />
 }
