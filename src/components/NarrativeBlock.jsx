@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 function NarrativeBlock({title=null, content=null, alignment=null, bgColor=null, images=null, ctas=null }) {
   return (
-    <div className="container narrative-block">
+    <div className={`container narrative-block ${bgColor}`}>
       <div className="row">
         <div className="col-lg-5 col-first">
           { title && (
