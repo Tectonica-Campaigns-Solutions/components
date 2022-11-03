@@ -4,13 +4,19 @@ import Logos from "../components/Logos";
 export default {
   title: "Components/Logos",
   component: Logos,
+  argTypes: {
+    bgColor: {
+      options: ["red", "blue", "green"],
+      control: { type: "radio" },
+    },
+  },
 };
 
 const Template = (args) => <Logos {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-  backgroundColor: "red",
+  bgColor: "red",
   intro:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel dictum viverra bibendum erat eget consequat tellus sit a.",
   title: "Lorem ipsum dolor sit amet",

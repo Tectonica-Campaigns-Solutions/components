@@ -4,6 +4,16 @@ import NarrativeBlock from "../components/NarrativeBlock";
 export default {
   title: "Components/NarrativeBlock",
   component: NarrativeBlock,
+  argTypes: {
+    alignment: {
+      options: ["left", "center", "right"],
+      control: { type: "radio" },
+    },
+    bgColor: {
+      options: ["red", "blue", "green"],
+      control: { type: "radio" },
+    },
+  },
 };
 
 const Template = (args) => <NarrativeBlock {...args} />;

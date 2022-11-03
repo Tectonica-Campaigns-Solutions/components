@@ -3,14 +3,14 @@ import CtaList from "./Global/CtaList";
 import GlobalImage from "./Global/GlobalImage";
 
 function Logos({
-  backgroundColor = null,
+  bgColor = null,
   title = null,
   intro = null,
   logos = null,
   ctas = null,
 }) {
   return (
-    <div className={`logos-block ${backgroundColor}`}>
+    <div className={`logos-block ${bgColor}`}>
       <div className="container">
         {title && <h2>{title}</h2>}
 
