@@ -10,9 +10,11 @@ const Template = (args) => <NarrativeBlock {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-  title: "Title example modified",
-  content: "<p>wdwd wdwdwd wdw</p>",
-  alignmen: "left",
+  title: "Title example",
+  preTitle: "Pre title",
+  content:
+    "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec imperdiet metus.</p>",
+  alignment: "left",
   bgColor: "red",
   images: {
     gatsbyImageData: {
@@ -35,4 +37,17 @@ Primary.args = {
     },
     alt: "Picture",
   },
+  ctas: [
+    {
+      title: "CTA",
+      isButton: true,
+      link: {
+        label: "link-to",
+        url: "www.google.com",
+        content: {
+          slug: "link-to",
+        },
+      },
+    },
+  ],
 };

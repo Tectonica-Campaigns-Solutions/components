@@ -21,7 +21,7 @@ function NarrativeBlock({
           className={`row ${alignment === "left" ? "flex-row-reverse" : ""}`}
         >
           <div
-            className={`${
+            className={`nb-first-col ${
               hasImageAndCentered || !hasImages
                 ? "col-lg-12 text-center"
                 : "col-lg-6 mb-5 mb-lg-0"
@@ -36,7 +36,7 @@ function NarrativeBlock({
 
           {images && (
             <div
-              className={`${
+              className={`nb-second-col ${
                 alignment === "center" ? "col-lg-12" : "col-lg-5"
               } ${alignment === "right" ? "offset-lg-1" : ""}`}
             >

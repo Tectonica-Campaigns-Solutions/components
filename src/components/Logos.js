@@ -21,7 +21,7 @@ function Logos({
         {logos && logos.length > 0 && (
           <div className="row logos-list justify-content-center g-5">
             {logos.map((logo) => (
-              <div className="col-lg-2 col-md-3 col-6">
+              <div className="logo-block-item col-lg-2 col-md-3 col-6">
                 <a href={logo?.url} target="_blank">
                   {logo.icon && <GlobalImage image={logo?.icon} />}
                 </a>
