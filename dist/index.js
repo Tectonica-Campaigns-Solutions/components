@@ -113,13 +113,13 @@ function ImageWrapper(_ref) {
       image
     } = _ref,
     props = _objectWithoutProperties(_ref, _excluded);
-  if (Array.isArray(image) && image.length > 0) {
+  if (image.length > 1) {
     return /*#__PURE__*/React.createElement(CTSlider, null, image.map(img => /*#__PURE__*/React.createElement(GlobalImage, _extends({
       image: img
     }, props))));
   }
   return /*#__PURE__*/React.createElement(GlobalImage, _extends({
-    image: image
+    image: image[0]
   }, props));
 }
 
