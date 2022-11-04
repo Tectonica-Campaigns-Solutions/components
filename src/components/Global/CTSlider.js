@@ -13,7 +13,7 @@ const settings = {
 };
 
 const CTSlider = ({ children }) => {
-  return <Slider {...settings}>{children}</Slider>;
+  return <div>hola</div>;
 }
 
 export default CTSlider;
