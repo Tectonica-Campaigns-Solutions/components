@@ -1,5 +1,5 @@
 import React from 'react';
-import 'react-slick';
+import Slider from 'react-slick';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 function Cta(_ref) {
@@ -74,9 +74,22 @@ function _objectWithoutProperties(source, excluded) {
   return target;
 }
 
-const CTSlider = _ref => {
-  return /*#__PURE__*/React.createElement("div", null, "hola");
+const settings = {
+  dots: false,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 1000,
+  slidesToShow: 1,
+  slidesToScroll: 1
 };
+function CTSlider(_ref) {
+  let {
+    children
+  } = _ref;
+  return /*#__PURE__*/React.createElement(Slider, settings, children);
+}
 
 const _excluded$1 = ["image"];
 const GlobalImage = _ref => {
