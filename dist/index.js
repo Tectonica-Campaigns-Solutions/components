@@ -157,4 +157,37 @@ function NarrativeBlock(_ref) {
   })))));
 }
 
-export { NarrativeBlock };
+function Logos(_ref) {
+  let {
+    bgColor = null,
+    title = null,
+    intro = null,
+    logos = null,
+    ctas = null
+  } = _ref;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "logos-block ".concat(bgColor)
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, title && /*#__PURE__*/React.createElement("h2", null, title), intro && /*#__PURE__*/React.createElement("div", {
+    className: "intro",
+    dangerouslySetInnerHTML: {
+      __html: intro
+    }
+  }), logos && logos.length > 0 && /*#__PURE__*/React.createElement("div", {
+    className: "row logos-list justify-content-center g-5"
+  }, logos.map(logo => /*#__PURE__*/React.createElement("div", {
+    className: "logo-block-item col-lg-2 col-md-3 col-6"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: logo === null || logo === void 0 ? void 0 : logo.url,
+    target: "_blank"
+  }, logo.icon && /*#__PURE__*/React.createElement(GlobalImage, {
+    image: logo === null || logo === void 0 ? void 0 : logo.icon
+  }))))), ctas && ctas.length > 0 && /*#__PURE__*/React.createElement("div", {
+    className: "logos-ctas"
+  }, /*#__PURE__*/React.createElement(CtaList, {
+    ctas: ctas
+  }))));
+}
+
+export { Logos, NarrativeBlock };
