@@ -12,6 +12,8 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function CTSlider({ children }) {
+const CTSlider = ({ children }) => {
   return <Slider {...settings}>{children}</Slider>;
 }
+
+export default CTSlider;

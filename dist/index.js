@@ -84,12 +84,12 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1
 };
-function CTSlider(_ref) {
+const CTSlider = _ref => {
   let {
     children
   } = _ref;
   return /*#__PURE__*/React.createElement(Slider, settings, children);
-}
+};
 
 const _excluded$1 = ["image"];
 const GlobalImage = _ref => {
