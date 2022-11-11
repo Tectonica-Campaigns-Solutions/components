@@ -7,15 +7,11 @@ export default [
   {
     input: './src/index.js',
     output: [
-      { file: 'dist/index.js', format: 'cjs'}
+      { file: 'dist/index.js', format: 'es'}
     ],
     plugins: [
       babel(),
-      commonjs({
-        namedExports: {
-          'node_modules/react-slick/dist/react-slick-min.js': [ 'Slider' ]
-        }
-      }),
+      commonjs(),
       peerDepsExternal(),
       nodeResolve(),
     ]
